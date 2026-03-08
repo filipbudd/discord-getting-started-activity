@@ -16,5 +16,6 @@ export default defineConfig({
     hmr: {
       clientPort: 443,
     },
+    allowedHosts: ['wales-fixes-labour-scheduled.trycloudflare.com'],
   },
 });

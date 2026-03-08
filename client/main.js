@@ -9,8 +9,8 @@ setupDiscordSdk().then(() => {
     console.log("Discord SDK is now ready!")
 })
 
-async function setupDiscordSDK() {
-    awaid discordSdk.ready();
+async function setupDiscordSdk() {
+    await discordSdk.ready();
 }
 
 document.querySelector('#app').innerHTML = `
