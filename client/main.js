@@ -1,5 +1,17 @@
+import { DiscordSDK } from "@discord/embedded-app-sdk"
+
 import './style.css'
-import rocketLogo from '/rocket.png'
+import rocketLogo from './rocket.png'
+
+const discordSdk = new DiscordSDK(import.meta.env.VITE_DISCORD_CLIENT_ID);
+
+setupDiscordSdk().then(() => {
+    console.log("Discord SDK is now ready!")
+})
+
+async function setupDiscordSDK() {
+    awaid discordSdk.ready();
+}
 
 document.querySelector('#app').innerHTML = `
   <div>
